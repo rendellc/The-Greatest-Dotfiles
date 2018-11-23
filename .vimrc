@@ -5,8 +5,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 Plugin 'tikhomirov/vim-glsl'
