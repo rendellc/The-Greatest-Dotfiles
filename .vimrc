@@ -9,7 +9,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 Plugin 'tikhomirov/vim-glsl'
 
-Plug 'sheerun/vim-polyglot'
+Plugin 'sheerun/vim-polyglot'
 
 Plugin 'scrooloose/nerdtree'
 
