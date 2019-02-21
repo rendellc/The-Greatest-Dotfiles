@@ -22,6 +22,9 @@ syntax on
 let g:ycm_confirm_extra_conf_globlist = ['~/dev']
 let g:ycm_filetype_blacklist = {'rmd': 1}
 
+" NERDTree options
+set wildignore+=*.pyc
+let NERDTreeRespectWildIgnore=1
 
 " Enhanced cpp highlight options
 let g:cpp_class_scope_highlight = 1
@@ -44,3 +47,4 @@ au BufRead,BufNewFile *.sdf set syntax=xml
 au BufRead,BufNewFile *.world set syntax=xml
 au BufRead,BufNewFile *.launch set syntax=xml
 au BufRead,BufNewFile model.config set syntax=xml
+
