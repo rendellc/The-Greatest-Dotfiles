@@ -55,3 +55,4 @@ au BufRead,BufNewFile *.sdf set syntax=xml
 au BufRead,BufNewFile *.world set syntax=xml
 au BufRead,BufNewFile *.launch set syntax=xml
 au BufRead,BufNewFile model.config set syntax=xml
+
