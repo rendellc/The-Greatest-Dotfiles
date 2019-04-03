@@ -13,14 +13,25 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
 
 " YouCompleteMe options
-" Ask once per conf file
+"" Ask once per conf file
 let g:ycm_confirm_extra_conf_globlist = ['~/dev']
 let g:ycm_filetype_blacklist = {'rmd': 1}
+
+" NERDTree settings
+let g:NERDTreeQuitOnOpen=0
+"" NERDTree toggle button
+map <C-f> :NERDTreeToggle<Enter>
+"" Open NERDTree on vim startup
+autocmd vimenter * NERDTree
+"" Close vim if NERDTree is the last tab
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
 " Enhanced cpp highlight options
