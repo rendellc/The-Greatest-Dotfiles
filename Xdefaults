@@ -1,0 +1,4 @@
+! Config for xterm
+xterm*faceName: DejaVu Sans Mono Bool
+xterm*faceSize: 20
+
