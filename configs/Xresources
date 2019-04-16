@@ -1,0 +1,10 @@
+! Config for xterm and uxterm
+UXTerm*faceName: DejaVu Sans Mono
+UXTerm*faceSize: 14
+UXTerm*font: fixed
+UXTerm*boldFont: fixed
+UXTerm*renderFont: true
+UXTerm*rightScrollBar: true
+UXTerm*eightBitInput: false
+UXTerm.vt100.saveLines: 4096
+

@@ -4,7 +4,7 @@
 install_vim()
 {
   pushd .
-  cd ~
+  cd $HOME
   git clone https://github.com/vim/vim.git
   cd vim
   ./configure --with-features=huge \

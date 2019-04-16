@@ -1,5 +1,5 @@
 # Repo for configuration files
 
 Install with
-`./install.sh`
+`./main.sh`
 
