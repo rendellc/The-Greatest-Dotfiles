@@ -48,26 +48,26 @@
 !*fadeColor: XXX ! Not sure what this does
 
 ! XTerm specific
-XTerm*background: _background
-XTerm*foreground: _foreground
+UXTerm*background: _background
+UXTerm*foreground: _foreground
 
 ! Not really required - XTerm defaults to using the foreground colour
-XTerm*cursorColor: _foreground
+UXTerm*cursorColor: _foreground
 
-XTerm*color0: _background
-XTerm*color1: _foreground
-XTerm*color2: _color2
-XTerm*color3: _color3
-XTerm*color4: _color4
-XTerm*color5: _color5
-XTerm*color6: _color6
-XTerm*color7: _color7
+UXTerm*color0: _background
+UXTerm*color1: _foreground
+UXTerm*color2: _color2
+UXTerm*color3: _color3
+UXTerm*color4: _color4
+UXTerm*color5: _color5
+UXTerm*color6: _color6
+UXTerm*color7: _color7
 ! 8-15 are considered brighter colours of 1-7
-XTerm*color8: _color8
-XTerm*color9: _color9
-XTerm*color10: _color10
-XTerm*color11: _color11
-XTerm*color12: _color12
-XTerm*color13: _color13
-XTerm*color14: _color14
-XTerm*color15: _color15
+UXTerm*color8: _color8
+UXTerm*color9: _color9
+UXTerm*color10: _color10
+UXTerm*color11: _color11
+UXTerm*color12: _color12
+UXTerm*color13: _color13
+UXTerm*color14: _color14
+UXTerm*color15: _color15

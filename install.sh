@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash -x
 
 SHDIR=$(realpath $(dirname $0))
 

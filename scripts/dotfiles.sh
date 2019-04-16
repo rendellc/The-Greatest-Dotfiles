@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 SHDIR=$(realpath $(dirname $0))
 
 DOTFILES="tmux.conf vimrc"

@@ -1,12 +1,10 @@
-#!/bin/bash
+#!/bin/bash -x
 sudo update-alternatives --set x-terminal-emulator /usr/bin/uxterm
 
 # Merge in Xresouces
 SHDIR=$(realpath $(dirname $0))
+XRESDIR=$SHDIR/../configs
 
-XRESOURCES="Xresources Xresources.molokai"
-for file in $XRESOURCES
-do
-  xrdb -merge $SHDIR/../configs/$file
-done
+xrdb $XRESDIR/Xresources
+xrdb -merge $XRESDIR/Xresources.molokai
 
