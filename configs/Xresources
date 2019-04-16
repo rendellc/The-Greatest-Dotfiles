@@ -1,6 +1,6 @@
 ! Config for xterm and uxterm
 UXTerm*faceName: DejaVu Sans Mono
-UXTerm*faceSize: 14
+UXTerm*faceSize: 11
 UXTerm*font: fixed
 UXTerm*boldFont: fixed
 UXTerm*renderFont: true
