@@ -1,5 +1,7 @@
 # Repo for configuration files
 
-Install with
-`./main.sh`
+Install useful programs with
+`./install.sh`
 
+Update configs with
+`./update.sh`

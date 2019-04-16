@@ -4,6 +4,6 @@ SHDIR=$(realpath $(dirname $0))
 DOTFILES="tmux.conf vimrc"
 for file in $DOTFILES
 do
-	ln -sf $SHDIR/$file $HOME/\.$file
+	ln -sf $SHDIR/configs/$file $HOME/\.$file
 done
 
