@@ -157,5 +157,3 @@ bar {
 # Start a clipboard manager
 exec --no-startup-id clipit
 
-
-
