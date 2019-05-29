@@ -27,7 +27,7 @@ let g:ycm_filetype_blacklist = {'rmd': 1}
 " NERDTree settings
 let g:NERDTreeQuitOnOpen=0
 "" NERDTree toggle button
-map <C-f> :NERDTreeToggle<Enter>
+map <C-x> :NERDTreeToggle<Enter>
 "" Open NERDTree on vim startup
 autocmd vimenter * NERDTree
 "" Close vim if NERDTree is the last tab
