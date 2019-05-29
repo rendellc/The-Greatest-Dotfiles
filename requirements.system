@@ -17,3 +17,5 @@ lua5.1
 liblua5.1-dev
 libperl-dev
 clipit
+tmux
+tmuxinator

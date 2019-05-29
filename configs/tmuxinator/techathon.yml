@@ -31,18 +31,14 @@ root: ~/techathon
 # post: tmux -CC attach -t techathon
 
 windows:
-  #- editor:
-  #    layout: main-horizontal
-  #    root: ~/techathon/catkin_ws/src
-  #    # Synchronize all panes of this window, can be enabled before or after the pane commands run.
-  #    # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
-  #    # synchronize: after
-  #    panes:
-  #      - 
-  #      -
+  - editor:
+      layout: main-horizontal
+      root: ~/techathon/catkin_ws/src
+      panes:
+        - vim
   - monitor: 
       layout: even-horizontal
       root: ~/techathon/catkin_ws
       panes:
-        - watch_and_compile.sh src "echo 'shell is $SHELL' && source /opt/ros/melodic/setup.bash && catkin_make"
+        - watch_and_compile.sh src "source /opt/ros/melodic/setup.bash && catkin_make"
         - htop
