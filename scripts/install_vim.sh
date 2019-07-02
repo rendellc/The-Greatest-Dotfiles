@@ -22,7 +22,7 @@ install_vim()
   popd
 }
 
-sudo apt remove -y vim vim-runtime 
+sudo apt remove -y vim vim-runtime
 sudo apt remove -y vim-tiny vim-common vim-gui-common vim-nox
 
 install_vim
