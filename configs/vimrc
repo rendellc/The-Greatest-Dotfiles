@@ -14,6 +14,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'fatih/vim-go'
+Plugin 'vim-latex/vim-latex'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,4 +56,8 @@ au BufRead,BufNewFile *.sdf set syntax=xml
 au BufRead,BufNewFile *.world set syntax=xml
 au BufRead,BufNewFile *.launch set syntax=xml
 au BufRead,BufNewFile model.config set syntax=xml
+
+" Latex
+let g:tex_flavor='latex'
+au BufRead,BufNewFile *.tex imap <C-space> <Plug>IMAP_JumpForward
 
