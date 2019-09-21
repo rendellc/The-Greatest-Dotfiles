@@ -154,6 +154,12 @@ bar {
         status_command i3status -c ~/.config/i3/status
 }
 
-# Start a clipboard manager
-exec --no-startup-id clipit
+# Setup keyboard layout toggle
+exec "setxkbmap -layout no,us"
+exec "setxkbmap -option 'grp:menu_toggle'"
+
+
+
+
+
 
