@@ -18,6 +18,7 @@ Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 syntax on
+"Plugin 'scrooloose/syntastic'
 
 " YouCompleteMe options
 "" Ask once per conf file
@@ -50,8 +51,18 @@ set number relativenumber
 " .dockerfile highlight
 au BufRead,BufNewFile *.dockerfile setfiletype dockerfile
 
+" Syntastic settings
+" set statusline+=%warningsmsg#
+" set statusline+=%{SyntasticStatusFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
 " Gazebo/ROS development: xml type files
 au BufRead,BufNewFile *.sdf set syntax=xml
+au BufRead,BufNewFile *.urdf set syntax=xml
 au BufRead,BufNewFile *.world set syntax=xml
 au BufRead,BufNewFile *.launch set syntax=xml
 au BufRead,BufNewFile model.config set syntax=xml

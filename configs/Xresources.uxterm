@@ -7,4 +7,5 @@ UXTerm*renderFont: true
 UXTerm*rightScrollBar: true
 UXTerm*eightBitInput: false
 UXTerm.vt100.saveLines: 4096
+XTerm*selectToClipboard: true
 
