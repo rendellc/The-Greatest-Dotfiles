@@ -13,6 +13,7 @@ libxpm-dev
 libxt-dev
 python-dev
 python3-dev
+ranger
 ruby-dev
 lua5.1
 liblua5.1-dev
@@ -21,3 +22,4 @@ clipit
 tmux
 tmuxinator
 zsh
+

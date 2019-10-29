@@ -40,7 +40,7 @@ windows:
       layout: main-horizontal
       root: ~/techathon/catkin_ws
       panes:
-        - watch_and_compile.sh src "source /opt/ros/melodic/setup.bash && catkin build"
+        #- watch_and_compile.sh src "source /opt/ros/melodic/setup.bash && catkin build"
         - htop
   - run:
       layout: tiled
