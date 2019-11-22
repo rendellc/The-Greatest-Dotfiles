@@ -7,9 +7,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+Plugin 'maralla/completor.vim'
+
 Plugin 'tikhomirov/vim-glsl'
 
-Plugin 'sheerun/vim-polyglot'
+" Plugin 'sheerun/vim-polyglot'
 
 Plugin 'scrooloose/nerdtree'
 
@@ -20,6 +22,15 @@ Plugin 'vim-latex/vim-latex'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'rstacruz/sparkup'
+
+Plugin 'Chiel92/vim-autoformat'
+
+Plugin 'mikewest/vimroom'
+
+Plugin 'dense-analysis/ale'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 filetype plugin indent on
@@ -60,6 +71,11 @@ set backspace=2
 " Good defaults for most langauges
 set tabstop=2 shiftwidth=2 expandtab autoindent
 set number relativenumber
+set incsearch
+set wrap linebreak  " useful for files with long lines
+
+" Ctags
+set tags+=$HOME/mono/projects/pong
 
 " .dockerfile highlight
 au BufRead,BufNewFile *.dockerfile setfiletype dockerfile
@@ -83,4 +99,30 @@ au BufRead,BufNewFile model.config set syntax=xml
 " Latex
 let g:tex_flavor='latex'
 au BufRead,BufNewFile *.tex imap <C-space> <Plug>IMAP_JumpForward
+au BufRead,BufNewFile *.tex noremap j gj
+au BufRead,BufNewFile *.tex noremap k gk
+au BufRead,BufNewFile *.tex set scrolloff=999
+au BufRead,BufNewFile *.tex set spelllang=en
+au BufRead,BufNewFile *.tex set spell
 
+" Completor
+let g:completor_clang_binary = '/usr/bin/clang'
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
+" Autoformat
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+let g:formatter_yapf_style = 'pep8'
+let g:formatters_python = ['yapf']
+au BufWrite * :Autoformat
+
+" ALE
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\ '*' : ['remove_trailing_lines', 'trim_whitespace'],
+\ 'tex' : ['latexindent'],
+\}
+let g:airline#extensions#ale#enabled = 1
