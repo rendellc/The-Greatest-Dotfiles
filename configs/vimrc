@@ -32,6 +32,8 @@ Plugin 'dense-analysis/ale'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'Twinside/vim-modelica'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
